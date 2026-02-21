@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.content {
+  width: 100%;
+  margin-bottom: 270px;
+  margin-top: 200px;
+}
+.text {
+  position: absolute;
+  top: 253px;
+  left: 868px;
+  font-weight: 600;
+  font-size: 36px;
+}
+.returnhome {
+  position: absolute;
+  top: 445px;
+  left: 868px;
+  width: 361px;
+  height: 75px;
+  border: none;
+  border-radius: 16px;
+  background-color: rgba(216, 255, 225, 1);
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(40, 167, 69, 1);
+}
+.returnhome a {
+  text-decoration: none;
+  color: rgba(40, 167, 69, 1);
+}
+.tvimg {
+  margin-left: 174px;
+}

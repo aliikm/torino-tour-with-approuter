@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  justify-content: space-between;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+.torinologo {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+}
+.supportphon {
+  position: absolute;
+  left: 140px;
+  top: 80px;
+  size: 15px;
+  font-weight: 400;
+}
+.torinoAbout {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 1220px;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+.customerService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 1000px;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+.customerService p {
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(40, 40, 40, 1);
+}
+.torinoAbout p {
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(40, 40, 40, 1);
+}
+.parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;   /* طول خط */
+  height: 2px;    /* ضخامت */
+  background: black;
+}

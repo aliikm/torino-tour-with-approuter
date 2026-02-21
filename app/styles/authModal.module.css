@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(102, 97, 97, 0.5);
+  z-index: 9999;
+}
+.modal {
+    box-sizing: border-box;
+overflow: hidden;
+  width: 561px;
+  height: 362px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.modal h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 200px;
+}
+.modal p {
+  direction: rtl;
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+}
+.modal input {
+  width: 491px;
+  height: 45px;
+  margin-left: 30px;
+  padding: 8px;
+  direction: rtl;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.modal button {
+  width: 497.5px;
+  height: 54px;
+  margin-left: 40px;
+  margin-top: 41px;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgba(40, 167, 69, 1);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.modal span{
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}

@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.login {
+  width: 30%;
+}
+.login button {
+  width: 166px;
+  height: 44px;
+  position: absolute;
+  top: 23px;
+  left: 126px;
+  gap: 4px;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgba(40, 167, 69, 1);
+  border-radius: 8px;
+  color: rgba(40, 167, 69, 1);
+  font-weight: 500;
+  font-size: 18px;
+}
+.nav {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+.nav a {
+  text-decoration: none;
+  padding: 18px;
+  padding-top: 28px;
+}
+.logo {
+  width: 25%;
+}
+.logo img {
+  width: 146px;
+  height: 44px;
+  position: absolute;
+  top: 23px;
+  left: 1120px;
+}
