@@ -3,6 +3,7 @@
 import Header from "@/components/module/Header";
 import Footer from "@/components/module/Footer";
 import localFont from "next/font/local";
+import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import AuthModal from "@/components/module/auth/AuthModal";
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={vazir.className}>
         <Header setShowModal={setShowModal} />
         {children}
+        <Toaster position="top-center" />
         {showModal && <AuthModal onClose={() => setShowModal(false)} />}
         <Footer />
       </body>

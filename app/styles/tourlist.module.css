@@ -1,0 +1,14 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(175, 175, 243);
+}
+.container{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}

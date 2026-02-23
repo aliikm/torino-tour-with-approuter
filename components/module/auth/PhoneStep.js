@@ -1,35 +1,44 @@
+"use client";
+
+import toast from "react-hot-toast";
+
 export default function PhoneStep({ phone, setPhone, setStep }) {
-  const handleSendCode = () => {
-    if (phone.length === 11) {
+
+
+
+
+
+
+
+  const handleCode = async () => {
+    if (phone.length !== 11) {
+      toast.error("شماره معتبر نیست");
+      return;
+    }
+
+    try {
+      const res = await fetch("http://localhost:6500/auth/send-otp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ mobile: phone }),
+      });
+      const data = await res.json();
+      console.log("Response:", data);
+      console.log("Status:", res.status);
+      if (!res.ok) {
+        toast.error(data.message || "خطا در ارسال کد");
+        return;
+      }
+
+      toast.success("کد ارسال شد");
       setStep("otp");
-    } else {
-      alert("شماره معتبر نیست");
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message || "server disconectet");
     }
   };
-
-
-  const handleCode = async () =>{
-    
-    try{
-const res = await fetch ("http://localhost:6500/auth/send-otp", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ phone }),
-});
-const data = await res.json()
-if(res.ok){
-  setStep("otp")
-  console.log("conected to DB")
-}else{alert( "خطا در ارسال کد")}
-
-
-    }catch(err){
-      console.log(err)
-      alert("server disconectet")
-    }
-  }
 
   return (
     <>
@@ -42,9 +51,7 @@ if(res.ok){
         onChange={(e) => setPhone(e.target.value)}
       />
 
-      <button onClick={handleCode}>
-        دریافت کد
-      </button>
+      <button onClick={handleCode}>دریافت کد</button>
     </>
   );
 }
