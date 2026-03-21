@@ -27,3 +27,16 @@
 .paraghraph p span{
     color: rgba(40, 167, 69, 1);
 }
+.mainbanner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 109px;
+   
+}
+.mainbanner img{
+    width: 80%;
+    height: 215px;
+   
+}

@@ -1,15 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import OtpInput from "react-otp-input";
 import styles from "@/app/styles/otpModal.module.css";
+import Link from "next/link";
+import toast from "react-hot-toast";
 
-export default function OtpStep({ onClose, setStep }) {
+export default function OtpStep({ onClose, setStep, user, setUser }) {
   const [otp, setOtp] = useState("");
+
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) {
+      setUser(storedUser);
+    }
+  }, []);
+
+  const userData = { phone: phoneNumber };
 
   const handleVerify = () => {
     if (otp.length === 6) {
-      alert("تایید شد");
+      localStorage.setItem("user", JSON.stringify({ phone: phoneNumber }));
+      setUser(userData);
+      toast.success("تایید شد");
       onClose();
     }
   };
@@ -36,7 +49,7 @@ export default function OtpStep({ onClose, setStep }) {
       />
 
       <button onClick={handleVerify} className={styles.verifyBtn}>
-        تأیید
+        <Link href="/">تأیید</Link>
       </button>
 
       <p onClick={() => setStep("phone")} className={styles.changeBtn}>

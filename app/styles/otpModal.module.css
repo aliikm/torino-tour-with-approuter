@@ -1,4 +1,5 @@
 .container {
+  height: auto;
   box-sizing: border-box;
   position: relative;
 }
@@ -13,7 +14,7 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .otpInput {
@@ -31,22 +32,24 @@
 }
 
 .verifyBtn {
-  width: 100%;
+  width: 800px;
   background: #2da44e;
-  color: white;
   border: none;
   border-radius: 10px;
   padding: 14px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 12px;
+}
+.verifyBtn a {
+  color: white;
+  text-decoration: none;
 }
 
 .changeBtn {
-    position: absolute;
-    right: 100px;
+  position: absolute;
+  right: 200px;
   width: 100%;
-  color:  rgba(40, 167, 69, 1);
+  color: rgba(40, 167, 69, 1);
   color: white;
   border: none;
   border-radius: 10px;

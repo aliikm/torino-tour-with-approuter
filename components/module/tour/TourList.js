@@ -4,12 +4,13 @@ import styles from"@/app/styles/tourlist.module.css"
 
 
 
-const TourList = () => {
+const TourList = ({tours}) => {
+
   return (
     <div className={styles.parent}>
+        
       <div className={styles.container}>
-        <h1>TourList</h1>
-        <Cards/>
+        {tours.map((tour) => (<Cards key={tour.id} tour={tour} />))}
       </div>
     </div>
   )

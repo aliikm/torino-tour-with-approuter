@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 102px;
+    background-color: cornflowerblue;
+}
+.content{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    background-color: bisque;
+}
+.imgcontainer{
+    width: 50%;
+    height: 400px;
+    background-color: aqua;
+}

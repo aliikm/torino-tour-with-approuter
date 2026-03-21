@@ -3,15 +3,15 @@ import styles from "@/app/styles/not-fount.module.css"
 import localFont from "next/font/local"
 import Link from "next/link";
 
-const vazir = localFont({
-  src: [
-    {
-      path: "../public/fonts/Vazirmatn-Regular.woff2",
-      style: "normal",
-    },
+// const vazir = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/Vazirmatn-Regular.woff2",
+//       style: "normal",
+//     },
  
-  ],
-});
+//   ],
+// });
 export default function NotFound() {
   return (
     <div className={styles.container}>
