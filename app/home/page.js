@@ -1,7 +1,8 @@
 import styles from "@/app/styles/home.module.css";
-import SearchInput from "@/components/module/SearchInput";
+import SearchInput from "@/components/module/searchinput/SearchInput";
 import TourList from "@/components/module/tour/TourList";
 import Description from "@/components/module/Description";
+import Support from "@/components/Support";
 import Image from "next/image";
 
 async function getTours() {
@@ -18,7 +19,7 @@ async function getTours() {
 
 async function Homepage() {
   const tours = await getTours();
- 
+
   return (
     <div className={styles.container}>
       <div className={styles.image}>
@@ -26,7 +27,7 @@ async function Homepage() {
       </div>
       <div className={styles.paraghraph}>
         <p>
-          <span>تورینو</span> برگزار کننده بهترین تورهای داخلی و خارجی{" "}
+          <span>تورینو</span> برگزار کننده بهترین تورهای داخلی و خارجی
         </p>
       </div>
       <SearchInput />
@@ -40,6 +41,7 @@ async function Homepage() {
         />
       </div>
       <Description />
+      <Support />
     </div>
   );
 }

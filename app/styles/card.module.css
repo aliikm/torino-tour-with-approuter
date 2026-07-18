@@ -29,13 +29,27 @@
   font-size: 16px;
   line-height: 20px;
   cursor: default;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
 }
 .content p {
-  margin: 0;
+  margin-top: 0px;
   font-size: 13px;
   color: #777;
   line-height: 18px;
   cursor: default;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
 }
 .footer {
   width: 100%;
@@ -55,12 +69,38 @@
   font-weight: bold;
   color: #00a651;
   cursor: default;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.price span {
+  margin-right: 5px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #777;
 }
 .footer button {
   position: relative;
   top: 0px;
   background: #00a651;
   color: #fff;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+
   border: none;
   padding: 6px 18px;
   border-radius: 8px;

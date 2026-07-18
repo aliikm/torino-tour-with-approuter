@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  left: 85px;
+  bottom: 135px;
+  width: 70%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card {
+  direction: rtl;
+  position: relative;
+  top: 10px;
+  margin: auto;
+  width: 98%;
+  height: 168px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 33%;
+}
+.header h3 {
+  margin-right: 10px;
+}
+.header span {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.finished {
+  background-color: #e8f7ee;
+  color: #2e7d32;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.ongoing {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.main {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: 33%;
+}
+.enddate {
+  position: relative;
+  right: 310px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+}
+.enddate span {
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 33%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tournumber {
+  width: 350px;
+  height: 80%;
+  display: flex;
+  position: relative;
+  right: 10px;
+  top: 7px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tournumber span {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  font-family: " Vazir FD-WOL";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(40, 40, 40, 1);
+}
+.price {
+  display: flex;
+  width: 200px;
+  height: 80%;
+  position: relative;
+  top: 7px;
+  right: 25px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.5);
+}
+.price span {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(40, 40, 40, 1);
+}

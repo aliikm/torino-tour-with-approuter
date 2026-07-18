@@ -1,46 +1,85 @@
 .container {
   width: 100%;
-  height: inherit;
+  height: 60px;
   display: flex;
-  position: relative;
-  border-bottom: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 16px;
 }
 
 .login {
   width: 30%;
-}
-.login button {
-  width: 166px;
-  height: 44px;
-  position: absolute;
-  top: 8px;
-  left: 126px;
-  gap: 4px;
-  padding: 8px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgba(40, 167, 69, 1);
-  border-radius: 8px;
-  color: rgba(40, 167, 69, 1);
-  font-weight: 500;
-  font-size: 18px;
-}
-.nav {
-  width: 45%;
+  height: auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
-.nav a {
-  text-decoration: none;
-  padding: 18px;
-  padding-top: 28px;
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
 }
-.logo {
-  width: 25%;
+
+.mobileMenu {
+  display: none;
 }
-.logo img {
-  width: 146px;
-  height: 44px;
-  position: absolute;
-  top: 8px;
-  left: 1120px;
+
+/* ---------- Tablet & Mobile ---------- */
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    order: 2;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .mobileMenu a {
+    text-decoration: none;
+    color: #282828;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo {
+    display: none;
+  }
 }

@@ -6,6 +6,9 @@ import localFont from "next/font/local";
 import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import AuthModal from "@/components/module/auth/AuthModal";
+import { AuthContext, AuthProvider } from "@/app/authcontext/AuthContext";
+import Providers from "./utils/Providers";
+import "./globals.css";
 
 // const vazir = localFont({
 //   src: [
@@ -16,9 +19,7 @@ import AuthModal from "@/components/module/auth/AuthModal";
 //   ],
 // });
 
-
-
-// export const metadada = 
+// export const metadada =
 // {
 //   metadataBase: new URL("http://localhost:3000"),
 
@@ -26,20 +27,26 @@ import AuthModal from "@/components/module/auth/AuthModal";
 //     "default": "تورینو",
 //     template :" %s| تورینو"
 //   } ,
-    
 
 //   description : "مجری بهترین تورهای داخلی و خارجی"
 // }
+
+/* <meta name="viewport" content="width=device-width, initial-scale=1" />; */
+
 export default function RootLayout({ children }) {
   const [showModal, setShowModal] = useState(false);
   return (
-    <html lang="en">
-      <body >
-        <Header setShowModal={setShowModal} />
-        {children}
-        <Toaster position="top-center" />
-        {showModal && <AuthModal onClose={() => setShowModal(false)} />}
-        <Footer />
+    <html lang="fa">
+      <body>
+        <AuthProvider>
+          <Providers>
+            <Header setShowModal={setShowModal} />
+            {children}
+            <Toaster position="top-center" />
+            {showModal && <AuthModal onClose={() => setShowModal(false)} />}
+            <Footer />
+          </Providers>
+        </AuthProvider>
       </body>
     </html>
   );

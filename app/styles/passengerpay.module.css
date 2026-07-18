@@ -1,0 +1,70 @@
+.container {
+  position: absolute;
+  left: 126px;
+  width: 327px;
+  height: 228px;
+  margin-right: 8px;
+  margin-top: 36px;
+  border: solid 1px rgba(153, 151, 151, 0.245);
+  border-radius: 10px;
+  direction: rtl;
+  background-color: rgba(255, 255, 255, 1);
+}
+.title {
+  margin-top: 10px;
+  width: 100%;
+  height: 25%;
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.5);
+}
+.title h2 {
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  padding: 10px;
+  margin-right: 10px;
+}
+.price {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 25%;
+  margin-top: 10px;
+}
+.price h5 {
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.price p {
+  position: relative;
+  bottom: 5px;
+  right: 25px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 158, 202, 1);
+}
+.price span {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}

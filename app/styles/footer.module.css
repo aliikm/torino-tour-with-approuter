@@ -1,9 +1,8 @@
 .container {
   position: relative;
   width: 100%;
-  height: 290px;
+  height: auto;
   display: flex;
-  border-top: 2px solid;
   border-bottom: 2px solid;
 }
 .logos {
@@ -39,6 +38,14 @@
   margin-top: 10px;
   align-items: center;
 }
+.torinoAbout p {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+}
 .customerService {
   display: flex;
   flex-direction: column;
@@ -55,21 +62,21 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: rgba(40, 40, 40, 1);
-}
-.torinoAbout p {
-  margin-bottom: 5px;
+  font-family: " Yekan Bakh";
   font-weight: 400;
-  line-height: 100%;
+  font-style: "Regular";
+  font-size: 18px;
   letter-spacing: 0%;
-  color: rgba(40, 40, 40, 1);
+  text-align: right;
 }
+
 .parent::before {
   content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;   /* طول خط */
-  height: 2px;    /* ضخامت */
+  width: 100px; /* طول خط */
+  height: 2px; /* ضخامت */
   background: black;
 }

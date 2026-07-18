@@ -1,0 +1,101 @@
+.container {
+  position: absolute;
+  bottom: 240px;
+  box-sizing: border-box;
+  display: flex;
+  direction: rtl;
+  width: 70%;
+  height: 115px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: 126px;
+}
+.phone {
+  position: relative;
+  top: 55px;
+  left: 120px;
+  font-family: "Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.phone span {
+  margin-right: 32px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.email {
+  position: relative;
+  top: 55px;
+  right: 200px;
+  font-family: "Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.span {
+  position: relative;
+  right: 260px;
+  top: 50px;
+}
+.editebtn {
+  position: relative;
+  right: 600px;
+  top: 20px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 158, 202, 1);
+}
+.editebtn span {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+.input {
+  position: relative;
+  right: 310px;
+  top: 75px;
+}
+.input input {
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+  width: 255px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.input button {
+  position: relative;
+  bottom: 30px;
+  left: 80px;
+  background-color: rgba(40, 167, 69, 1);
+  border: none;
+  width: 122px;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}

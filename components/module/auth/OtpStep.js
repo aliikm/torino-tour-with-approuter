@@ -1,32 +1,61 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import OtpInput from "react-otp-input";
 import styles from "@/app/styles/otpModal.module.css";
-import Link from "next/link";
 import toast from "react-hot-toast";
+import { success } from "zod";
+import { apiFetch } from "@/app/utils/api";
+import { useAuth } from "@/app/authcontext/AuthContext";
 
-export default function OtpStep({ onClose, setStep, user, setUser }) {
+// const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
+export default function OtpStep({ phone, onClose }) {
   const [otp, setOtp] = useState("");
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-    if (storedUser) {
-      setUser(storedUser);
+  const { setUser } = useAuth();
+
+  const handleVerify = async () => {
+    if (otp.length !== 6) {
+      toast.error("کد باید ۶ رقم باشد");
+
+      return;
     }
-  }, []);
 
-  const userData = { phone: phoneNumber };
+    try {
+      const data = await apiFetch("/auth/check-otp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          mobile: phone,
+          code: otp,
+        }),
+      });
 
-  const handleVerify = () => {
-    if (otp.length === 6) {
-      localStorage.setItem("user", JSON.stringify({ phone: phoneNumber }));
-      setUser(userData);
-      toast.success("تایید شد");
+      console.log(data);
+
+      localStorage.setItem("refreshToken", data.refreshToken);
+      localStorage.setItem("phone", phone);
+      // ذخیره token
+      localStorage.setItem("accessToken", data.accessToken);
+
+      // ذخیره user در context
+      setUser({
+        phone,
+        accessToken: data.accessToken,
+      });
+
+      toast.success("ورود موفق");
+
       onClose();
+    } catch (error) {
+      console.log(error);
+
+      toast.error(error.message);
     }
   };
-
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>کد تأیید</h3>
@@ -37,24 +66,17 @@ export default function OtpStep({ onClose, setStep, user, setUser }) {
         numInputs={6}
         containerStyle={styles.otpWrapper}
         renderInput={(props) => (
-          <input
-            {...props}
-            style={{
-              width: "20px",
-              height: "20px",
-            }}
-            className={styles.otpInput}
-          />
+          <input {...props} className={styles.otpInput} />
         )}
       />
 
       <button onClick={handleVerify} className={styles.verifyBtn}>
-        <Link href="/">تأیید</Link>
+        تأیید
       </button>
 
-      <p onClick={() => setStep("phone")} className={styles.changeBtn}>
+      {/* <p onClick={() => setStep("phone")} className={styles.changeBtn}>
         تغییر شماره
-      </p>
+      </p> */}
     </div>
   );
 }

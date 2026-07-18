@@ -1,42 +1,61 @@
-.container{
+.container {
+  width: 100%;
+  height: auto;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.paraghraph {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.paraghraph p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100%;
+  color: rgba(89, 89, 89, 1);
+}
+.paraghraph p span {
+  color: rgba(40, 167, 69, 1);
+}
+.mainbanner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 109px;
+}
+.mainbanner img {
+  width: 80%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .mainbanner {
+    margin-top: 48px;
+  }
+
+  .mainbanner img {
     width: 100%;
     height: auto;
+  }
 }
-.image{
-    width: 100%;
-    height: auto;
-    
-}
-.image img{
-    width: 100%;
-    height: auto;
-}
-.paraghraph{
-   display: flex;
-   justify-content: center;
-    width: 100%;
-    height: auto;
-   
-}
-.paraghraph p{
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 100%;
-    color: rgba(89, 89, 89, 1);
-}
-.paraghraph p span{
-    color: rgba(40, 167, 69, 1);
-}
-.mainbanner{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 109px;
-   
-}
-.mainbanner img{
-    width: 80%;
-    height: 215px;
-   
+@media (max-width: 768px) {
+  .paraghraph {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .paraghraph p {
+    font-size: 20px;
+  }
 }

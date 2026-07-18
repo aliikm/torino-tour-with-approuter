@@ -1,19 +1,85 @@
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 102px;
+  direction: rtl;
+}
+.content {
+  display: flex;
+  width: 80%;
+  height: auto;
+}
+.imgcontainer {
+  width: 50%;
+  height: auto;
+  background-color: aqua;
+}
+.decriptioncontainer {
+  padding: 10px;
+  width: 50%;
+}
+.decriptioncontainer h4 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 156%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.decriptioncontainer h6 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+
+  line-height: 165%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.decriptioncontainer p {
+  font-family: "A Iranian Sans";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 20px;
+  line-height: 220.00000000000003%;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 400px;
-    margin-top: 102px;
-    background-color: cornflowerblue;
-}
-.content{
-    display: flex;
-    width: 80%;
-    height: 400px;
-    background-color: bisque;
-}
-.imgcontainer{
-    width: 50%;
-    height: 400px;
-    background-color: aqua;
+  }
+  .imgcontainer,
+  .decriptioncontainer {
+    width: 100%;
+  }
+  .decriptioncontainer h4 {
+    font-family: "Vazirmatn";
+    font-weight: 800;
+    font-style: "ExtraBold";
+    font-size: 24px;
+    line-height: 156%;
+    letter-spacing: 0%;
+    text-align: right;
+    white-space: nowrap;
+    order: 1;
+  }
+  .decriptioncontainer h6 {
+    display: none;
+  }
+  .decriptioncontainer p {
+    display: none;
+  }
+  .imgcontainer {
+    width: 90%;
+    height: 90%;
+    order: 2;
+  }
 }

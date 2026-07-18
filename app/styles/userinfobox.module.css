@@ -1,0 +1,198 @@
+.container {
+  position: absolute;
+  bottom: 30px;
+  box-sizing: border-box;
+  display: flex;
+  direction: rtl;
+  width: 70%;
+  height: 171px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: 126px;
+  margin-top: 37px;
+}
+.container h3 {
+  white-space: nowrap;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  position: relative;
+  right: 15px;
+}
+.name {
+  display: flex;
+  position: relative;
+  top: 48px;
+  left: 150px;
+  font-family: " Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 0, 0, 1);
+}
+.nameinput {
+  position: relative;
+  width: 255px;
+  height: 45px;
+  top: 48px;
+  left: 60px;
+  border-radius: 5px;
+}
+.name span {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.gender {
+  display: flex;
+  position: absolute;
+  top: 98px;
+  left: 280px;
+  font-family: "Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.genderselect {
+  position: relative;
+  top: 65px;
+  left: 60px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.gender span {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.nationalcode {
+  display: flex;
+  position: relative;
+  right: 450px;
+  font-family: "Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.nationalcodeinput {
+  position: relative;
+  top: 48px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.nationalcode span {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.birthday {
+  display: flex;
+  position: relative;
+  left: 150px;
+  top: 20px;
+  font-family: "Yekan Bakh";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.birthdayselect {
+  position: relative;
+  top: 48px;
+  right: 100px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.birthday span {
+  margin-right: 140px;
+  margin-top: 10px;
+}
+
+.editbtn {
+  position: relative;
+  right: 820px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 158, 202, 1);
+}
+.buttoncontainer {
+  position: relative;
+  top: 70px;
+  border-top: 1px solid black;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  direction: ltr;
+  background-color: beige;
+}
+.successbtn {
+  width: 144px;
+  height: 41px;
+  background-color: rgba(40, 167, 69, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.cancelbtn {
+  width: 144px;
+  height: 41px;
+  background-color: whitesmoke;
+  border: 2px solid rgba(40, 167, 69, 1);
+  border-radius: 5px;
+  color: rgba(40, 167, 69, 1);
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+:global(.zm-Header) {
+  background-color: rgb(255, 255, 255) !important;
+  border: none !important;
+}
+:global(.zm-MonthYearButton) {
+  background-color: rgba(40, 167, 69, 1) !important;
+  color: white !important;
+  border-radius: 4px !important;
+}
+:global(.zm-IconNextButton) {
+  color: rgba(40, 167, 69, 1) !important ;
+}
+:global(.zm-IconPrevButton) {
+  color: rgba(40, 167, 69, 1) !important ;
+}
+:global(.zm-DaysButton)[aria-selected="true"] {
+  background-color: rgba(40, 167, 69, 1) !important;
+  border-radius: 4px !important;
+}

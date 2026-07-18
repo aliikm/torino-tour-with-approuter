@@ -11,8 +11,8 @@
   z-index: 9999;
 }
 .modal {
-    box-sizing: border-box;
-overflow: hidden;
+  box-sizing: border-box;
+  overflow: hidden;
   width: 561px;
   height: 362px;
   border: none;
@@ -22,7 +22,8 @@ overflow: hidden;
 .modal h3 {
   font-size: 28px;
   font-weight: 600;
-  margin-left: 200px;
+  position: relative;
+  left: 200px;
 }
 .modal p {
   direction: rtl;
@@ -43,8 +44,11 @@ overflow: hidden;
 .modal button {
   width: 497.5px;
   height: 54px;
-  margin-left: 40px;
-  margin-top: 41px;
+  position: relative;
+  top: 60px;
+  left: 35px;
+  /* margin-left: 40px;
+  margin-top: 81px; */
   border: none;
   padding: 8px;
   border-radius: 6px;
@@ -52,9 +56,49 @@ overflow: hidden;
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
-.modal span{
-    position: relative;
-    top: 20px;
-    left: 20px;
-
+.modal span {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+  }
+  .modal h3 {
+    font-family: " Yekan Bakh";
+    font-weight: 600;
+    font-style: "SemiBold";
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: auto;
+    margin-top: 30px;
+    white-space: nowrap;
+  }
+  .modal p {
+    font-family: "Yekan Bakh";
+    font-weight: 300;
+    font-style: Light;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    margin-top: 60px;
+    margin-right: 50px;
+  }
+  .modal input {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .modal button {
+    width: 80%;
+    font-family: "Vazir FD-WOL";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 }

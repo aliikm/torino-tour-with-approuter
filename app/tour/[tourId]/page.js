@@ -1,34 +1,20 @@
 import TourDetails from "@/components/module/tour/TourDetails";
-import React from "react";
 
-async function getToursId() {
-  const res = await fetch("http://localhost:6500/tour/{tourId}", {
-    next :{revalidate : 5},
-  });
 
-  if (!res.ok) {
-  console.log("hi")
- }else{
-   
-    throw new Error("failed to fetch")
-  }
+async function getToursId(id) {
+  const res = await fetch(`http://localhost:6500/tour`);
 
-  return res.json();
+const data = await res.json()
+return data.find(t => t.id === id)
 }
 
-async function Details() {
-  const tours = await getToursId();
-  console.log(tours)
+export default async function Details({ params }) {
+  const { tourId } = await params;
+
+  const tours = await getToursId(tourId);
   return (
-  
-  
-  <div>
-<TourDetails tours={tours}/>
-  </div>
-
-
-
-);
+    <div>
+      <TourDetails tours={tours} />
+    </div>
+  );
 }
-
-export default Details;

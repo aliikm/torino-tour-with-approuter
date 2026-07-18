@@ -1,0 +1,64 @@
+.container {
+  width: 246px;
+  height: 151px;
+  direction: rtl;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 11px;
+  position: absolute;
+  z-index: 2000;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 5px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.userphone {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 44px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-radius: 11px 11px 0 0;
+  background-color: rgba(244, 244, 244, 1);
+}
+
+.userinfo {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 44px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.userinfo a {
+  text-decoration: none;
+  color: rgba(40, 40, 40, 1);
+}
+
+.logoutbtn {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(212, 0, 0, 1);
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 7px;
+}

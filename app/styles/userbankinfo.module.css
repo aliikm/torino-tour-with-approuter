@@ -1,0 +1,145 @@
+.container {
+  position: absolute;
+  top: 200px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  direction: rtl;
+  width: 70%;
+  height: 171px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: 126px;
+  margin-top: 37px;
+}
+.container h3 {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  white-space: nowrap;
+  position: relative;
+  right: 15px;
+}
+.shebanumber {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.shebainput {
+  position: relative;
+  top: 70px;
+  left: 60px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.shebanumber span {
+  margin-right: 70px;
+  margin-top: 17px;
+}
+.hesabnumber {
+  display: flex;
+  position: absolute;
+  top: 110px;
+  right: 20px;
+}
+.bankidinput {
+  position: relative;
+  top: 70px;
+  right: 10px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.hesabnumber span {
+  margin-right: 50px;
+  margin-top: 17px;
+}
+.cardnumber {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 650px;
+}
+.cardbankinput {
+  position: relative;
+  top: 70px;
+  right: 90px;
+  width: 255px;
+  height: 45px;
+  border-radius: 5px;
+}
+.cardnumber span {
+  margin-right: 50px;
+  margin-top: 17px;
+}
+.editebtn {
+  position: absolute;
+  right: 920px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: rgba(0, 158, 202, 1);
+}
+.buttoncontainer {
+  width: 1000px;
+  position: relative;
+  top: 120px;
+  left: 50px;
+  border-top: 1px solid black;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  direction: ltr;
+  background-color: beige;
+}
+.successbtn {
+  width: 144px;
+  height: 41px;
+  background-color: rgba(40, 167, 69, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.cancelbtn {
+  width: 144px;
+  height: 41px;
+  background-color: whitesmoke;
+  border: 2px solid rgba(40, 167, 69, 1);
+  border-radius: 5px;
+  color: rgba(40, 167, 69, 1);
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.edibtn {
+  position: relative;
+  right: 780px;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 158, 202, 1);
+}

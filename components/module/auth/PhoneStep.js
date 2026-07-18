@@ -2,14 +2,7 @@
 
 import toast from "react-hot-toast";
 
-export default function PhoneStep({ phone, setPhone, setStep }) {
-
-
-
-
-
-
-
+export default function PhoneStep({ phone, setPhone, setStep, setServerCode }) {
   const handleCode = async () => {
     if (phone.length !== 11) {
       toast.error("شماره معتبر نیست");
@@ -25,15 +18,15 @@ export default function PhoneStep({ phone, setPhone, setStep }) {
         body: JSON.stringify({ mobile: phone }),
       });
       const data = await res.json();
+      console.log(data);
       console.log("Response:", data);
       console.log("Status:", res.status);
-      if (!res.ok) {
-        toast.error(data.message || "خطا در ارسال کد");
+      if (!data.ok) {
+        toast.success(`کد تایید: ${data.code}`);
+        setServerCode(data.code);
+        setStep("otp");
         return;
       }
-
-      toast.success("کد ارسال شد");
-      setStep("otp");
     } catch (err) {
       console.log(err);
       toast.error(err.message || "server disconectet");
@@ -42,7 +35,8 @@ export default function PhoneStep({ phone, setPhone, setStep }) {
 
   return (
     <>
-      <h3>شماره موبایل</h3>
+      <h3> ورود به تورینو</h3>
+      <p>شماره موبایل خود را وارد کنید</p>
 
       <input
         type="tel"
@@ -51,7 +45,7 @@ export default function PhoneStep({ phone, setPhone, setStep }) {
         onChange={(e) => setPhone(e.target.value)}
       />
 
-      <button onClick={handleCode}>دریافت کد</button>
+      <button onClick={handleCode}> ارسال کد تایید</button>
     </>
   );
 }

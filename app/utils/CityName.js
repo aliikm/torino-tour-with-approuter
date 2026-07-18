@@ -1,0 +1,15 @@
+export const cityMap = {
+  tehran: "تهران",
+  mashhad: "مشهد",
+  tabriz: "تبریز",
+  shiraz: "شیراز",
+  kish: "کیش",
+  sananndaj: "سنندج",
+  madrid: "مادرید",
+  isfahan: "اصفهان",
+  sulaymaniyah: "سلیمانیه",
+  hewler: "هولیر",
+  mazandaran: "مازندران",
+  italy: "ایتالیا",
+  gilan: "گیلان",
+};

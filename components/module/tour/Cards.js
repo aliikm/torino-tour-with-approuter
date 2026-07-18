@@ -6,10 +6,11 @@ import Link from "next/link";
 
 const Cards = ({ tour }) => {
   console.log(tour);
+  
   return (
     <>
       <div className={styles.container}>
-        <Link href={`/tour/${tour.id}`}>
+        
           <div className={styles.image}>
             <Image
               src={tour.image}
@@ -19,15 +20,18 @@ const Cards = ({ tour }) => {
               unoptimized
             />
           </div>
-        </Link>
+       
         <div className={styles.content}>
-          <h3>{tour.title}</h3>
+          <h4>{tour.title}</h4>
           <p>{tour.options}</p>
         </div>
         <div className={styles.footer}>
+          <Link href={`/tour/${tour.id}`}>
+          
           <button>رزرو</button>
+          </Link>
           <span className={styles.price}>
-            <p>قیمت: {tour.price}تومان</p>
+            <p>{tour.price}<span>تومان</span></p>
           </span>
         </div>
       </div>
