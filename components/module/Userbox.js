@@ -29,9 +29,7 @@ const UserBox = ({ openModal, toggleUserModal }) => {
         </div>
       ) : (
         <button onClick={openModal} className={styles.button}>
-          <span className={styles.btnlogin}>
-            <FaUser /> ورود / ثبت نام
-          </span>
+          <span className={styles.btnlogin}>ورود / ثبت نام</span>
           <FaUser className={styles.iconuser} />
         </button>
       )}

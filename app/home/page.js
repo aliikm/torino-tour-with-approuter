@@ -1,7 +1,7 @@
 import styles from "@/app/styles/home.module.css";
 import SearchInput from "@/components/module/searchinput/SearchInput";
 import TourList from "@/components/module/tour/TourList";
-import Description from "@/components/module/Description";
+import Descrition from "@/components/module/description/Description";
 import Support from "@/components/Support";
 import Image from "next/image";
 
@@ -40,7 +40,7 @@ async function Homepage() {
           alt="mainbanner"
         />
       </div>
-      <Description />
+      <Descrition />
       <Support />
     </div>
   );
